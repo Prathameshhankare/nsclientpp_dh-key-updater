@@ -72,7 +72,7 @@ Run the script manually:
 
 The log file will contain similar entries as shown in the log output example. Here is a snippet of what the log file content may look like:
 
-\`\`\`
+```
 2024-07-11 10:00:00 - Processing DC01
 2024-07-11 10:00:01 - DC01 is up.
 2024-07-11 10:00:02 - NSClient++ service found on DC01.
@@ -83,7 +83,7 @@ The log file will contain similar entries as shown in the log output example. He
 2024-07-11 10:00:07 - DC02 is up.
 2024-07-11 10:00:08 - NSClient++ service found on DC02.
 2024-07-11 10:00:09 - DH key file already exists on DC02. Skipping...
-\`\`\`
+```
 
 These log entries provide a step-by-step record of what the script is doing, which can be helpful for debugging and auditing purposes.
 
