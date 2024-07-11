@@ -68,6 +68,26 @@ Run the script manually:
 .\NSClientPP_DHKey_Updater.ps1
 ```
 
+## Log File Content Example
+
+The log file will contain similar entries as shown in the log output example. Here is a snippet of what the log file content may look like:
+
+\`\`\`
+2024-07-11 10:00:00 - Processing DC01
+2024-07-11 10:00:01 - DC01 is up.
+2024-07-11 10:00:02 - NSClient++ service found on DC01.
+2024-07-11 10:00:03 - DH key file created on DC01 at \\DC01\C$\Program Files\NSClient++\security\nrpe_dh_2048.pem.
+2024-07-11 10:00:04 - nsclient.ini file updated on DC01.
+2024-07-11 10:00:05 - NSClient++ service restarted on DC01.
+2024-07-11 10:00:06 - Processing DC02
+2024-07-11 10:00:07 - DC02 is up.
+2024-07-11 10:00:08 - NSClient++ service found on DC02.
+2024-07-11 10:00:09 - DH key file already exists on DC02. Skipping...
+\`\`\`
+
+These log entries provide a step-by-step record of what the script is doing, which can be helpful for debugging and auditing purposes.
+
+
 ## Note
 Ensure you generate your own DH key. The one provided in the script is a placeholder.
 
