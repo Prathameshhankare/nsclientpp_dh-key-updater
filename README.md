@@ -36,7 +36,7 @@ This script is designed to automate the process of adding a Diffie-Hellman (DH) 
 
 Run the script in a PowerShell session with administrative privileges.
 
-### Example:
+#### Example:
 
 To run the script manually:
 
@@ -52,7 +52,7 @@ To run the script periodically, you can set up a scheduled task in Windows Task 
 
 Check the specified log file for detailed logs of the script's execution.
 
-### Example
+#### Example
 
 Suppose your log file path is C:\Logs\nsclientpp.log:
 
@@ -68,7 +68,7 @@ Run the script manually:
 .\NSClientPP_DHKey_Updater.ps1
 ```
 
-### Note
+## Note
 Ensure you generate your own DH key. The one provided in the script is a placeholder.
 
 This script is a tool to help automate the configuration of NSClient++ on your domain controllers. Ensure you review and test the script in a controlled environment before deploying it in production.
