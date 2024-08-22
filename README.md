@@ -16,6 +16,7 @@ This script is designed to automate the process of adding a Diffie-Hellman (DH) 
 - **DH Key Management**: Creates the DH key file if it does not exist and updates the NSClient++ configuration.
 - **Logging**: Logs all actions and results to a specified log file.
 - **Error Handling**: Skips servers that are unreachable or already have the DH key file.
+- **CSV Export**: Results are exported to a specified CSV file.
 
 ## Usage
 
@@ -30,7 +31,11 @@ This script is designed to automate the process of adding a Diffie-Hellman (DH) 
    ```powershell
    $logFilePath = "PATH/TO/YOUR/LOGFILE.log"
    ```
-2. Ensure the Active Directory PowerShell module is installed and imported.
+2. Modify the script to set the path for your CSV file:
+   ```powershell
+   $logFilePath = "PATH/TO/YOUR/output.csv"
+   ```
+3. Ensure the Active Directory PowerShell module is installed and imported.
 
 ### Execution
 
@@ -87,6 +92,20 @@ The log file will contain similar entries as shown in the log output example. He
 
 These log entries provide a step-by-step record of what the script is doing, which can be helpful for debugging and auditing purposes.
 
+## CSV File Content Example
+
+Exporting the data to a CSV file provides a streamlined and efficient way to manage and analyze information from a large number of Domain Controllers, allowing for easy tracking of server statuses and configuration changes in a structured format that is compatible with various data analysis tools. Here is a snippet of what the log file content may look like:
+
+```
+Date,Time,Server,Server Status,NSClient++ Service,DH Key Created?,Config file updated,Restarted NSClient++?
+2024-08-22,18:15:10,DC01,UP,Yes,Already Exists,NA,NA
+2024-08-22,18:16:14,DC01,UP,Yes,Already Exists,NA,NA
+2024-08-22,18:16:15,DC02,UP,No,No,No,No
+2024-08-22,18:16:17,DC03,UP,Yes,Already Exists,NA,NA
+2024-08-22,18:16:18,DC04,UP,Yes,Already Exists,NA,NA
+2024-08-22,18:16:18,DC05,UP,Yes,Already Exists,NA,NA
+2024-08-22,18:16:19,DC06,UP,No,No,No,No
+```
 
 ## Note
 Ensure you generate your own DH key. The one provided in the script is a placeholder.
