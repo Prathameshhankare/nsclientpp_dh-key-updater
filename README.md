@@ -98,7 +98,6 @@ Exporting the data to a CSV file provides a streamlined and efficient way to man
 
 ```
 Date,Time,Server,Server Status,NSClient++ Service,DH Key Created?,Config file updated,Restarted NSClient++?
-2024-08-22,18:15:10,DC01,UP,Yes,Already Exists,NA,NA
 2024-08-22,18:16:14,DC01,UP,Yes,Already Exists,NA,NA
 2024-08-22,18:16:15,DC02,UP,No,No,No,No
 2024-08-22,18:16:17,DC03,UP,Yes,Already Exists,NA,NA
