@@ -33,7 +33,7 @@ This script is designed to automate the process of adding a Diffie-Hellman (DH) 
    ```
 2. Modify the script to set the path for your CSV file:
    ```powershell
-   $logFilePath = "PATH/TO/YOUR/output.csv"
+   $outputCsv = "PATH/TO/YOUR/output.csv"
    ```
 3. Ensure the Active Directory PowerShell module is installed and imported.
 
