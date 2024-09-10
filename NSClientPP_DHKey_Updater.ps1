@@ -96,6 +96,9 @@ c4w0X5vt8igXCaxr8qncJQ5sswEKPDFAfwIBAg==
         Log-Message "DH key file created on $server at $remotePath."
         $dhKeyCreated = "Yes"
 
+        # *** Define the path to the nsclient.ini file on the remote server ***
+        $remoteIniPath = "C:\Program Files\NSClient++\nsclient.ini"
+
         # Update the nsclient.ini file
         Invoke-Command -ComputerName $server -ScriptBlock {
             param ($remoteIniPath)
